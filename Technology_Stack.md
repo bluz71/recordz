@@ -4,11 +4,11 @@
 | Language | Ruby | TypeScript
 | REPL | rails c / pry | ?
 | JS Library | jQuery | -
-| CSS Frameworkd | Bootstrap | Pico or Tailwind + daisyUI
+| CSS Frameworkd | Bootstrap | Pico or Tailwind + daisyUI or Skeleton
 | Storage | Postgres | CockroachDB / Planetscale
 | Text Search | Postgres '@@' | CockroachDB trigram index (v22.2) with % operator? (1)
 | Jobs Processor | Sidekiq | ?
-| ORM | ActiveRecord | Prisma (but no polymorphic association), Sequelize, TypeORM
+| ORM | ActiveRecord | Prisma (no polymorphic association), Drizzle ORM (3), Kysely
 | Page Cache | cache_store + Redis | ? upstash (2)
 | Deployment | Digital Ocean Droplet | Vercel
 | Image Processing | CarrierWave (local & API) | (local & API)?
@@ -26,5 +26,6 @@
 
 - (1) See: [Trigram Indexes](https://www.cockroachlabs.com/docs/stable/trigram-indexes.html) and [Use cases for trigram indexes](https://www.cockroachlabs.com/blog/use-cases-trigram-indexes)
 - (2) See: [Speed up SvelteKit Pages With a Redis Cache](https://www.captaincodeman.com/speed-up-sveltekit-pages-with-a-redis-cache)
+- (3) See: [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm)
 
 - Checkout Prisma studio: npx prisma studio
